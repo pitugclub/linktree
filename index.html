@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIT Link Tree</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type = "image/png" href="static/PIT Logo.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="./static/PIT Logo.png" alt="PIT Logo">
+            <div class="title-container">
+                <span id="typed-output"></span><span class="typing-cursor">|</span>
+            </div>
+        </header>
+        <a href="https://sites.google.com/umass.edu/pitumass/events?authuser=0" target="_blank" class="btn btn-calendar"><i class="fas fa-calendar-alt"></i> Upcoming events</a>
+        <a href="https://www.instagram.com/pitumass2023/" target="_blank" class="btn btn-instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/company/104167726" target="_blank" class="btn btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://join.slack.com/t/pit-club/shared_invite/zt-22lq7i7wm-Z_4L_eNrP0A6cdniRIJvtA" target="_blank" class="btn btn-slack"><i class="fab fa-slack"></i> Slack</a>
+        <a href="https://sites.google.com/umass.edu/pitumass/home?authuser=0" target="_blank" class="btn btn-website"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://forms.gle/hxRnrjEa28VcmmteA" target="_blank" class="btn btn-newspaper"><i class="far fa-newspaper"></i> Mailing list interest</a>
+    </div>
+    <script>
+        const textToType = "Public Interest Technology";
+        const outputElement = document.getElementById("typed-output");
+        let index = 0;
+    
+        function typeText() {
+            if (index < textToType.length) {
+                outputElement.textContent += textToType.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            }
+        }
+    
+        typeText();
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 2rem;
+    text-align: center; 
+}
+
+.title-container {
+    margin-left: 1rem;
+    font-size: 3em;  
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.typing-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 0.5rem 0;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-instagram {
+    background-color: white;
+    color: black;
+}
+
+.btn-linkedin {
+    background-color: white;
+    color: black;
+}
+
+.btn-slack {
+    background-color: white;
+    color: black;
+}
+
+.btn-website {
+    background-color: white;
+    color: black;
+}
+
+.btn-newspaper {
+    background-color: white;
+    color: black;
+}
+
+.btn-calendar {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .title-container {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 1.8em;  
+    }
+}
